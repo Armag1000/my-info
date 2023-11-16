@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+}
+img{
+    width: 165px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%  ;
+}
+header{
+    padding: 35px 140px;
+    background-image: url(sigma\ kartinka.jpg);
+    background-position-y: -100px;
+    background-size: 110%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+h1{
+    color: white;
+    text-shadow: -5px 5px 5px darkslateblue;
+}
+header > p{
+    padding-top: 20px;
+    font-size: 24px;
+    color: whitesmoke;
+    align-items: center;
+}
+main{
+    padding: 25px;
+    background-color: rgb(230, 86, 252);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    text-align: center;
+
+}
+section:nth-child(1){
+    grid-row: span 2;
+}
+section:nth-child(2){
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+h2 {
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+    font-weight: 1000;
+}
+footer{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-gap: 10px;
+    background-color: rgb(228, 56, 255);
+}
+
+footer > h2 {
+    grid-column: span 3;
+}
+section:nth-child(2) > h2{
+    grid-column: span 2;
+}
+section:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+section:nth-child(1) > h2{
+    grid-column: span 2;
+}
+h3:nth-child(4){
+    font-weight: 1000;
+}
+
+@media (max-width: 850px){
+    *{
+        display: block !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    h2{
+        margin: 10px 0;
+    }
+
+    main{
+        display: block !important;
+    }
+
+    footer{
+        display: block;
+    }
+
+    header {
+        padding: 25px 10px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: bottom;
+    }
+
+    header > img {
+        margin: 0 auto;
+    }
+
+    header > h1 {
+        margin: 0 auto;
+    }
+}
